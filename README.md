@@ -10,6 +10,7 @@ See use.rb example.
 
 you can run the example by: 
 
+    $ bundle install # install dependencies
     $ ruby use.rb
 
 To configure your lightning node set environment variables:
