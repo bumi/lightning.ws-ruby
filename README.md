@@ -6,7 +6,15 @@ It uses the [lightning faraday middleware](https://github.com/bumi/faraday_ln_pa
 
 ## Usage
 
-See use.rb example
+See use.rb example. 
+
+you can run the example by: 
+
+    $ ruby use.rb
+
+To configure your lightning node set environment variables:
+
+    $ MACAROON_PATH=/path/admin.macaroon CREDENTIALS_PATH=/path/tls.cert ADDRESS=host:port ruby use.rb
 
 ```ruby
 require "./lightning_ws"
