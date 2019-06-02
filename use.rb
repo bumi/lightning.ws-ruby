@@ -9,6 +9,12 @@ client = LightningWs.new({
   address: ENV['ADDRESS']
 })
 
-puts client.translate("hallo welt")
-puts client.ocr("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Blocksatz-Beispiel_deutsch%2C_German_text_sample_with_fully_justified_text.svg/1500px-Blocksatz-Beispiel_deutsch%2C_German_text_sample_with_fully_justified_text.svg.png")
+puts "Hello lightning.ws"
+puts "Text to translate to english:"
+text = gets
+text.strip!
+puts "Translating `#{text}`..."
+puts client.translate(text)
+
+#puts client.ocr("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Blocksatz-Beispiel_deutsch%2C_German_text_sample_with_fully_justified_text.svg/1500px-Blocksatz-Beispiel_deutsch%2C_German_text_sample_with_fully_justified_text.svg.png")
 
